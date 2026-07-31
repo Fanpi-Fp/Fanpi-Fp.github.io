@@ -1,57 +1,104 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fanpi-Fp | Official Page</title>
+    <title>Fanpi | Official Website</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #1e293b;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            max-width: 480px;
+            width: 100%;
             text-align: center;
+            border: 1px solid #334155;
         }
-        .card {
-            background-color: #161b22;
-            padding: 2.5rem;
-            border-radius: 12px;
-            border: 1px solid #30363d;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-            max-width: 400px;
-            width: 85%;
+        .logo {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #38bdf8;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
         }
-        h1 {
-            color: #58a6ff;
-            margin-bottom: 0.5rem;
-            font-size: 1.8rem;
-        }
-        p {
-            color: #8b949e;
-            line-height: 1.5;
+        .description {
+            color: #94a3b8;
             font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 24px;
         }
-        .status {
+        .badge {
             display: inline-block;
-            margin-top: 1rem;
-            padding: 6px 12px;
-            background-color: rgba(56, 139, 253, 0.15);
-            color: #58a6ff;
+            padding: 6px 14px;
+            background-color: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
             border-radius: 20px;
             font-size: 0.85rem;
             font-weight: 600;
+            margin-bottom: 24px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+        .contact-box {
+            background-color: #0f172a;
+            padding: 16px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+        .contact-title {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+        .contact-email {
+            color: #f1f5f9;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .contact-email:hover {
+            color: #38bdf8;
+        }
+        footer {
+            margin-top: 24px;
+            font-size: 0.8rem;
+            color: #64748b;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Fanpi-Fp</h1>
-        <p>Официальная страница разработчика и домена верификации сервисов.</p>
-        <div class="status">● Сайт работает</div>
+    <div class="container">
+        <div class="logo">Fanpi</div>
+        <div class="badge">Mobile App Development</div>
+        <p class="description">
+            We build modern mobile applications and digital services focused on quality, usability, and value for our users.
+        </p>
+        
+        <div class="contact-box">
+            <div class="contact-title">Support & Contact</div>
+            <a href="mailto:Nyutoni@gmail.com" class="contact-email">nyutoni@gmail.com</a>
+        </div>
+
+        <footer>
+            © 2026 Fanpi. All rights reserved.
+        </footer>
     </div>
 </body>
 </html>
