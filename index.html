@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fanpi | Official Website</title>
+    
+    <!-- Иконка на вкладке браузера -->
+    <link rel="icon" type="image/png" href="Fp.png">
+
     <style>
         * {
             box-sizing: border-box;
@@ -31,20 +35,25 @@
             border: 1px solid rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(10px);
         }
-        .logo-icon {
-            font-size: 2.8rem;
-            font-weight: 800;
-            letter-spacing: -2px;
-            color: #f3f0e6;
-            margin-bottom: 8px;
-            line-height: 1;
+        /* Логотип-иконка FP */
+        .site-logo {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            border-radius: 16px;
+            margin-bottom: 20px;
         }
-        .logo-text {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #f3f0e6;
-            letter-spacing: -0.5px;
-            margin-bottom: 16px;
+        /* Главное баннерное изображение Fanpi */
+        .main-hero-img {
+            width: 100%;
+            max-width: 260px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         .badge {
             display: inline-block;
@@ -99,9 +108,12 @@
 </head>
 <body>
     <div class="container">
-        <!-- Текстовый аналог монограммы Fp, также можно заменить на <img src="лого.png"> -->
-        <div class="logo-icon">Fp</div>
-        <div class="logo-text">Fanpi</div>
+        <!-- Маленький логотип FP -->
+        <img src="Fp.png" alt="FP Logo" class="site-logo">
+        
+        <!-- Главная плашка-картинка Fanpi -->
+        <img src="Fanpi.png" alt="Fanpi" class="main-hero-img">
+        
         <div class="badge">Mobile App Development</div>
         
         <p class="description">
